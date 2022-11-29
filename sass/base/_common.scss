@@ -1,0 +1,18 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--color-one);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
