@@ -5,10 +5,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-four);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   
   @include desktop {
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
   }
 }

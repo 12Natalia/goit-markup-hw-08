@@ -349,7 +349,11 @@ body {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    padding-left: 40px;
+  }
 }
 .mob-menu > .container {
   height: 100%;
@@ -399,11 +403,16 @@ body {
 .mob-connect__tel {
   display: block;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 33px;
   letter-spacing: 0.02em;
   color: var(--color-two);
   margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) {
+  .mob-connect__tel {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .mob-connect__email {
@@ -422,7 +431,12 @@ body {
 .mob-soc {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+}
+@media screen and (min-width: 480px) {
+  .mob-soc {
+    gap: 10px;
+  }
 }
 
 .mob-soc__item {
@@ -432,19 +446,29 @@ body {
 
 .mob-soc__item:not(:first-child)::before {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   content: "";
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
 }
+@media screen and (min-width: 480px) {
+  .mob-soc__item:not(:first-child)::before {
+    margin-right: 10px;
+  }
+}
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--color-two);
+}
+@media screen and (min-width: 480px) {
+  .mob-soc__link {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .cap {
@@ -594,12 +618,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-four);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .title-section {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 
@@ -910,7 +935,7 @@ body {
 }
 
 .footer-email-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid var(--border-input-footer);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -945,6 +970,11 @@ body {
 .footer-email-input:focus {
   border-color: var(--color-two);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .footer-email-input {
+    width: 358px;
+  }
 }
 
 .footer-button {
@@ -1067,16 +1097,22 @@ body {
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
+  width: 320px;
   background-color: var(--color-one);
   border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 40px 15px;
   transform: translate(-50%, -50%) rotate(0);
   transition: transform 300ms linear, border-radius 300ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1235,12 +1271,17 @@ body {
 }
 
 .check-text {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 9px;
   letter-spacing: 0.03em;
   color: var(--color-five);
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 @media screen and (min-width: 1200px) {
   .check-text {

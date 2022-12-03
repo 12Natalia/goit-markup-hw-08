@@ -207,8 +207,9 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
-
+  @include mobile {
+    padding-left: 40px;
+  }
   > .container {
     height: 100%;
     display: flex;
@@ -262,11 +263,14 @@
 .mob-connect__tel {
   display: block;
   font-weight: 500;
-  font-size: 34px;
-  line-height: calc(40 / 34);
+  font-size: 33px;
   letter-spacing: 0.02em;
   color: var(--color-two);
   margin-bottom: 32px;
+  @include mobile {
+    font-size: 34px;
+    line-height: calc(40 / 34);
+  }
 }
 .mob-connect__email {
   display: block;
@@ -283,7 +287,10 @@
 .mob-soc {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  @include mobile {
+    gap: 10px;
+  }
 }
 .mob-soc__item {
   display: flex;
@@ -291,17 +298,23 @@
 }
 .mob-soc__item:not(:first-child)::before {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   content: "";
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
+  @include mobile {
+    margin-right: 10px;
+  }
 }
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: calc(22 / 18);
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--color-two);
+  @include mobile {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 }
